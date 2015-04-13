@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {
     "bootstrap-sass-official": "~3.3.1",
-    "modernizr": "~2.8.1"
+    "modernizr": "~2.8.1",
+    "bootswatch-scss": "git@github.com:log0ymxm/bootswatch-scss.git#~3.2.0"
   }
 }
