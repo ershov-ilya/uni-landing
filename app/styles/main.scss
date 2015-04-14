@@ -1,11 +1,11 @@
 $icon-font-path: '../fonts/';
 
+// Здесь определяется только Тема
 @import "app/styles/theme/landos/_variables.scss";
 // bower:scss
 @import "bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 @import "app/styles/theme/landos/_bootswatch.scss";
-
 // Custom styles
 @import "app/styles/theme/landos/custom.scss";
 
