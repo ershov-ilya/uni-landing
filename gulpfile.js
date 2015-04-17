@@ -2,6 +2,8 @@
 'use strict';
 // generated on 2015-04-13 using generator-gulp-webapp 0.3.0
 var gulp = require('gulp');
+var gutil = require('gulp-util');
+var ftp = require('gulp-ftp');
 var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
