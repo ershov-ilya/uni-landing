@@ -125,3 +125,21 @@ gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'extras'], function () 
 gulp.task('default', ['clean'], function () {
   gulp.start('build');
 });
+
+gulp.task('push', function () {
+  return gulp.src('dist/**/*')
+    .pipe(ftp({
+      host: 'jupiter.effetto.pro',
+      user: 'lands',
+      pass: 'W0k5L3w98I0g1U5k',
+      remotePath: '/land/default'
+    }))
+    // you need to have some kind of stream after gulp-ftp to make sure it's flushed
+    // this can be a gulp plugin, gulp.dest, or any kind of stream
+    // here we use a passthrough stream
+    .pipe(gutil.noop());
+});
+
+gulp.task('p', ['build'], function () {
+  gulp.start('push');
+});
